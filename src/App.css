@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+:root {
+    --skobeloff: #006466ff;
+    --midnight-green-eagle-green: #065a60ff;
+    --midnight-green-eagle-green-2: #0b525bff;
+    --midnight-green-eagle-green-3: #144552ff;
+    --charcoal: #1b3a4bff;
+    --prussian-blue: #212f45ff;
+    --space-cadet: #272640ff;
+    --dark-purple: #312244ff;
+    --russian-violet: #3e1f47ff;
+    --russian-violet-2: #4d194dff;
+    --rosso-corsa:#D00000;
+}
+
+* {
+    font-family: "Roboto Condensed", sans-serif;
+}
+body {
+    background-color: var(--Navy);
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+a:hover {
+    color: var(--rosso-corsa);
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: var(--midnight-green-eagle-green-3);
+    color: #fff;
+}
+a.item {
+    margin: 0 1.5rem;
+}
