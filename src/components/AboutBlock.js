@@ -7,6 +7,7 @@ function AboutBlock() {
             <div>
                 <h3>{block.title}</h3>
                 <p>{block.content}</p>
+                <hr className="solid"/>
             </div>
             
         ))

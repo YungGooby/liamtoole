@@ -6,6 +6,7 @@ function ProjectsBlock() {
                 <h3>{block.title}</h3>
                 <h5>Languages: {block.tags + " "}</h5>
                 <p>{block.content}</p>
+                <hr className="solid"/>
             </div>
         
     );
