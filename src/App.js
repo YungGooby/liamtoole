@@ -8,9 +8,6 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Route exact path="/about" component={About} />
-                <Route exact path="/projects" component={Projects} />
-
                 <div className="navigation">
                     <img src={logo} className="logo" alt="logo" />
                     <div className="nagivation-sub">
@@ -38,6 +35,8 @@ function App() {
                         </a>
                     </div>
                 </div>
+                <Route exact path="/about" component={About} />
+                <Route exact path="/projects" component={Projects} />
             </div>
         </BrowserRouter>
     );

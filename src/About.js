@@ -1,5 +1,11 @@
+import AboutBlock from "./components/AboutBlock";
+
 function About() {
-    return <h1>About Component</h1>
+    return(
+        <>
+        <AboutBlock/>
+        </>
+    )
 }
 
-export default About
+export default About;

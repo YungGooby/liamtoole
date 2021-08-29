@@ -1,0 +1,17 @@
+[
+    {
+        "id": 10001,
+        "title": "1. Inspiration",
+        "content": "My first introduction to coding was through the fantastic game Warcraft 3: Reign of Chaos. This game had a built-in level editor that used JASS (Just Another Scripting Syntax) for programming complex actions that weren't available via GUI's. Being able to maipulate anything and everything as kid with a wild imagination was like a revelation."
+    },
+    {
+        "id": 10002,
+        "title": "2. Beginnning the Journey",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem rem natus at non eaque quae aspernatur minima molestiae ullam. Ab eum vitae dolorem molestias facilis obcaecati enim numquam. Quo iure autem possimus earum consequuntur mollitia maxime consequatur veritatis accusantium, delectus, natus similique reprehenderit in omnis eos deleniti ex nemo fugiat asperiores quas sequi officiis neque, eum quaerat. Praesentium officia voluptates voluptas est delectus molestiae nulla, enim soluta possimus nam ipsa perspiciatis explicabo sint rerum facere et! In esse voluptas facilis excepturi blanditiis natus maxime repellendus dolore quidem tenetur, quod, neque voluptate totam quia ex rerum, labore illo ipsum adipisci numquam sed pariatur! Veritatis quo cumque ratione laborum. Inventore, quia consequuntur labore id eos, odio quas, sint recusandae pariatur magni sapiente. Necessitatibus cum aperiam provident quae magni, tempore molestias minus sint, ex dicta voluptatibus sequi nulla aliquam exercitationem ad inventore tempora? Ab ipsam consequatur non maiores eveniet error consectetur voluptatum?"
+    },
+    {
+        "id": 10003,
+        "title": "3. Entering the Open World",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem rem natus at non eaque quae aspernatur minima molestiae ullam. Ab eum vitae dolorem molestias facilis obcaecati enim numquam. Quo iure autem possimus earum consequuntur mollitia maxime consequatur veritatis accusantium, delectus, natus similique reprehenderit in omnis eos deleniti ex nemo fugiat asperiores quas sequi officiis neque, eum quaerat. Praesentium officia voluptates voluptas est delectus molestiae nulla, enim soluta possimus nam ipsa perspiciatis explicabo sint rerum facere et! In esse voluptas facilis excepturi blanditiis natus maxime repellendus dolore quidem tenetur, quod, neque voluptate totam quia ex rerum, labore illo ipsum adipisci numquam sed pariatur! Veritatis quo cumque ratione laborum. Inventore, quia consequuntur labore id eos, odio quas, sint recusandae pariatur magni sapiente. Necessitatibus cum aperiam provident quae magni, tempore molestias minus sint, ex dicta voluptatibus sequi nulla aliquam exercitationem ad inventore tempora? Ab ipsam consequatur non maiores eveniet error consectetur voluptatum?"
+    }
+]

@@ -33,7 +33,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 100vw;
+    height: 9vh;
     background-color: var(--midnight-green-eagle-green-3);
     color: #fff;
 }
