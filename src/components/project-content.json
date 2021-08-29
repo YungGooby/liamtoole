@@ -1,0 +1,14 @@
+[
+    {
+        "id": 10001,
+        "title": "Discord Chat Scraper",
+        "tags": ["Python"],
+        "content": "This aim of the project is too gather all historical text chat within a discord channel and out put the information into a CSV file. This will eventually tie into another projects to show statistics for that particular discord channel via a web app. The bot will scrape all the chat information from the channel in which a command is used. It will also never pull data in which the client_id is itself. Once it gathers all the information it will DM you with the where the command was called, how many messages and the CSV file to download."
+    },
+    {
+        "id": 10002,
+        "title": "Portfolio",
+        "tags": ["HTML", "CSS","JavaScript","React"],
+        "content": "This is my own personal portfolio site that is always underdevelopment as i learn new tricks for web development. The site will mainly house current projects, my GitHub link and my CV. This site is constantly going through redesigns and tweaks to improve the readability and content available. There is no set timeline for the site or brief on the content that will become available."
+    }
+]

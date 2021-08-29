@@ -1,5 +1,7 @@
+import ProjectsBlock from "./components/ProjectsBlock"
+
 function Projects() {
-    return <h1>Projects Component</h1>
+    return <ProjectsBlock/>
 }
 
 export default Projects
