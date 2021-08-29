@@ -14,12 +14,12 @@ function App() {
                 <div className="navigation">
                     <img src={logo} className="logo" alt="logo" />
                     <div className="nagivation-sub">
-                        <a href="/about" className="item">
+                        <Link to="/about" className="item">
                             About
-                        </a>
-                        <a href="/projects" className="item">
+                        </Link>
+                        <Link to="/projects" className="item">
                             Projects
-                        </a>
+                        </Link>
                         <a
                             href="https://github.com/YungGooby"
                             className="item"
