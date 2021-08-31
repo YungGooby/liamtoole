@@ -9,7 +9,9 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <div className="navigation">
-                    <img src={logo} className="logo" alt="logo" />
+                    <Link to="/">
+                        <img src={logo} className="logo" alt="logo" />
+                    </Link>
                     <div className="nagivation-sub">
                         <Link to="/about" className="item">
                             .about( )
@@ -36,8 +38,14 @@ function App() {
                     </div>
                 </div>
                 <div className="content-window">
-                <Route exact path="/about" component={About} />
-                <Route exact path="/projects" component={Projects} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/projects" component={Projects} />
+                    <div className="typing-container">
+                        <p>
+                            Programming is<span className="typed-text"></span>
+                            <span class="cursor">&nbsp;</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </BrowserRouter>

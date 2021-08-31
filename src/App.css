@@ -15,13 +15,13 @@
 body {
     background-color: var(--eerie-black);
 }
-h1{
+h1 {
     color: var(--red-orange-color-wheel);
 }
-h3{
+h3 {
     color: var(--antique-white);
 }
-h5{
+h5 {
     color: var(--pacific-blue);
 }
 a {
@@ -48,6 +48,57 @@ a:hover {
 a.item {
     margin: 0 1.5rem;
 }
-.content-window{
+.logo {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.typing-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typing-container p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+.typing-container p span.cursor{
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+0%  { background-color: #ccc; }
+49% { background-color: #ccc; }
+50% { background-color: transparent; }
+99% { background-color: transparent; }
+100%  { background-color: #ccc; }
+}
+.content-window {
     padding: 0 5%;
+}
+.image-container {
+    max-height: 100px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+}
+.project-image {
+    height: 100%;
+    padding-left: 1000px;
 }
