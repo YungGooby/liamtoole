@@ -12,10 +12,10 @@ function App() {
                     <img src={logo} className="logo" alt="logo" />
                     <div className="nagivation-sub">
                         <Link to="/about" className="item">
-                            About
+                            .about( )
                         </Link>
                         <Link to="/projects" className="item">
-                            Projects
+                            .projects( )
                         </Link>
                         <a
                             href="https://github.com/YungGooby"
@@ -23,7 +23,7 @@ function App() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Github
+                            .github( )
                         </a>
                         <a
                             href="https://github.com/YungGooby"
@@ -31,12 +31,14 @@ function App() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            CV
+                            .cv( )
                         </a>
                     </div>
                 </div>
+                <div className="content-window">
                 <Route exact path="/about" component={About} />
                 <Route exact path="/projects" component={Projects} />
+                </div>
             </div>
         </BrowserRouter>
     );
