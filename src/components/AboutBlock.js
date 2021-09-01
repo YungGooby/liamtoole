@@ -1,17 +1,15 @@
-function AboutBlock() {
+import parse from 'html-react-parser'
 
-    const aboutData = require('./about-content.json')
-    
-    return (
-        aboutData.map((block) => (
-            <div>
-                <h3>{block.title}</h3>
-                <p>{block.content}</p>
-                <hr className="solid"/>
-            </div>
-            
-        ))
-    );
+function AboutBlock() {
+    const aboutData = require("./about-content.json");
+
+    return aboutData.map((block,index) => (
+        <div key={index}>
+            <h3>{block.title}</h3>
+            {parse(`<div>${block.content}</div>`)}
+            <hr className="solid" />
+        </div>
+    ));
 }
 
 export default AboutBlock;

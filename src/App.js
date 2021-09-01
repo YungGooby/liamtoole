@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import Projects from "./Projects";
-import About from "./About";
+import HomeContent from "./components/HomeContent";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import About from "./components/About";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -40,13 +42,9 @@ function App() {
                 <div className="content-window">
                     <Route exact path="/about" component={About} />
                     <Route exact path="/projects" component={Projects} />
-                    <div className="typing-container">
-                        <p>
-                            Programming is<span className="typed-text"></span>
-                            <span class="cursor">&nbsp;</span>
-                        </p>
-                    </div>
+                    <Route exact path="/" component={HomeContent} />
                 </div>
+                <Footer/>
             </div>
         </BrowserRouter>
     );

@@ -4,7 +4,7 @@ function ProjectsBlock() {
     const projectData = require("./project-content.json");
 
     return projectData.map((block,index) => (
-        <div>
+        <div key={index}>
             <h3>{block.title}</h3>
             <h5>Languages: {block.tags + " "}</h5>
             <div className="image-container">
