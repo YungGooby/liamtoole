@@ -1,8 +1,8 @@
 // import ProjectsBlock from "./ProjectsBlock";
 import ProjectCard from "./ProjectCard";
-import logo from "../logo.svg";
-import svelteImage from "./images/rsz_svelteimage.png";
-import discImage from "./images/rsz_discordimage.jpeg"
+import logo from '../../logo.svg'
+import svelteImage from "../images/rsz_svelteimage.png";
+import discImage from "../images/rsz_discordimage.jpeg"
 
 function Projects() {
     return (

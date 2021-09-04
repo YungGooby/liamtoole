@@ -1,4 +1,4 @@
-import testImage0 from "./images/testImage.PNG";
+import testImage0 from "../images/testImage.PNG";
 
 function ProjectsBlock() {
     const projectData = require("./project-content.json");

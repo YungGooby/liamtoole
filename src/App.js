@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import HomeContent from "./components/HomeContent";
-import Projects from "./components/Projects";
+import Projects from "./components/projects/Projects";
 import Footer from "./components/Footer";
-import About from "./components/About";
+import About from "./components/about/About";
 import logo from "./logo.svg";
 import "./App.css";
 
