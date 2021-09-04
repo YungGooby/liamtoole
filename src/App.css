@@ -50,6 +50,7 @@ a:hover {
 }
 a.item {
     margin: 0 1.5rem;
+    font-size: 1.2rem;
 }
 .logo {
     user-drag: none;
@@ -131,8 +132,14 @@ body::-webkit-scrollbar {
     background-color: var(--antique-white)
   }
 
+pre{
+    background-color: rgb(17, 17, 17);
+    box-shadow: 2px 2px 5px #000;
+    padding: 1%;
+    
+}
 code{
-    color: var(--light-salmon);
+    color: var(--pacific-blue);
 }
 .proj{
     height: 35%;
@@ -173,7 +180,4 @@ code{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-.search-form{
-    color: #000;
 }
