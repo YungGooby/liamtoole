@@ -1,5 +1,5 @@
 import { BrowserRouter, Route} from "react-router-dom";
-import HomeContent from "./components/HomeContent";
+import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/Footer";
 import About from "./components/about/About";
@@ -14,7 +14,7 @@ function App() {
                 <div className="content-window">
                     <Route exact path="/about" component={About} />
                     <Route exact path="/projects" component={Projects} />
-                    <Route exact path="/" component={HomeContent} />
+                    <Route exact path="/" component={Home} />
                 </div>
                 <Footer/>
             </div>
