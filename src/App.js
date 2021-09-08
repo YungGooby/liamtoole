@@ -1,4 +1,4 @@
-import { BrowserRouter, Route} from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/Footer";
@@ -8,17 +8,17 @@ import "./App.css";
 
 function App() {
     return (
-        <BrowserRouter>
-            <div className="App">
+        <div className="app">
+            <BrowserRouter>
                 <Nav />
                 <div className="content-window">
                     <Route exact path="/about" component={About} />
                     <Route exact path="/projects" component={Projects} />
                     <Route exact path="/" component={Home} />
                 </div>
-                <Footer/>
-            </div>
-        </BrowserRouter>
+                <Footer />
+            </BrowserRouter>
+        </div>
     );
 }
 

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 :root {
+    /* Color Pallette */
     --eerie-black: #201e1fff;
     --red-orange-color-wheel: #ff4000ff;
     --light-salmon: #faaa8dff;
@@ -13,11 +14,12 @@
     font-family: "Roboto Condensed", sans-serif;
     color: #fff;
 }
-.App {
-    height: 100vh;
-}
-body {
+html,
+body,
+.app {
     background-color: var(--eerie-black);
+    position: relative;
+    min-height: 100vh;
 }
 h1 {
     color: var(--red-orange-color-wheel);
@@ -38,6 +40,8 @@ a {
 a:hover {
     color: var(--red-orange-color-wheel);
 }
+
+/* Navigation CSS */
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -63,9 +67,10 @@ a.item {
     height: 5rem;
     margin-right: 2rem;
 }
+/* Main Content Window CSS */
 .content-window {
-    padding: 0 5%;
-    height: 85vh;
+    padding: 0 5% 2.5rem 5%;
+    height: 100%;
 }
 .image-container {
     max-height: 100px;
@@ -82,8 +87,12 @@ a.item {
     height: 100%;
     padding-left: 1000px;
 }
+/* Footer CSS */
 .footer {
-    max-height: 20vh;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -92,6 +101,7 @@ a.item {
     font-size: 0.75rem;
 }
 
+/* Scrollbar CSS */
 body::-webkit-scrollbar {
     width: 1em;
 }
@@ -104,6 +114,7 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--antique-white);
 }
 
+/* Code Block CSS */
 pre {
     background-color: rgb(17, 17, 17);
     box-shadow: 2px 2px 5px #000;
@@ -113,6 +124,8 @@ pre {
 code {
     color: var(--pacific-blue);
 }
+
+/* Project Blocks */
 .proj {
     height: 35%;
     width: auto;
@@ -207,7 +220,7 @@ code {
 /* Home Content - Terminal Window */
 .terminal-window {
     text-align: left;
-    width: 1200px;
+    width: 60vw;
     height: 560px;
     border-radius: 10px;
     margin: auto;
@@ -304,7 +317,7 @@ code {
 }
 
 /* Home Content - Mobile */
-.homecontent-mobile{
+.homecontent-mobile {
     text-align: center;
 }
 div.homecontent-mobile h1:nth-child(odd) {
