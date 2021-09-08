@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import ProjectsMobile from "./ProjectsMobile";
-import logo from "../../logo.svg";
+import logo from "../images/logo.svg"
 import svelteImage from "../images/rsz_svelteimage.png";
 import discImage from "../images/rsz_discordimage.jpeg";
 import { useWindowSize } from "../functions/functions";

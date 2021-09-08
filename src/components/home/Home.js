@@ -6,9 +6,9 @@ function HomeContent() {
     const size = useWindowSize();
     return (
         <>
-            <div className="typing-container">
+            <div className="home-header">
                 <p>
-                    Programming is <span className="typed-text">...</span>
+                    Programming is <span className="home-header-accent">...</span>
                 </p>
             </div>
             {size.width > 768 ? <HomeTerminal /> : <HomeMobileContent />}

@@ -1,5 +1,8 @@
+/* Font Imports */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+
+/* CSS Variables */
 :root {
     /* Color Pallette */
     --eerie-black: #201e1fff;
@@ -8,7 +11,7 @@
     --antique-white: #feefddff;
     --pacific-blue: #50b2c0ff;
 }
-
+/* Default Styling Across Site */
 * {
     box-sizing: border-box;
     font-family: "Roboto Condensed", sans-serif;
@@ -20,6 +23,7 @@ body,
     background-color: var(--eerie-black);
     position: relative;
     min-height: 100vh;
+    margin: 0;
 }
 h1 {
     color: var(--red-orange-color-wheel);
@@ -30,6 +34,7 @@ h3 {
 h5 {
     color: var(--pacific-blue);
 }
+/* Link Styles */
 a {
     display: inline-block;
     text-decoration: none;
@@ -71,21 +76,6 @@ a.item {
 .content-window {
     padding: 0 5% 2.5rem 5%;
     height: 100%;
-}
-.image-container {
-    max-height: 100px;
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(5px);
-    position: relative;
-    overflow: hidden;
-}
-.project-image {
-    height: 100%;
-    padding-left: 1000px;
 }
 /* Footer CSS */
 .footer {
@@ -233,7 +223,7 @@ code {
     border-radius: 8px 8px 0 0;
     padding-left: 10px;
 }
-
+/* Terminal Buttons */
 .button {
     width: 12px;
     height: 12px;
@@ -253,7 +243,7 @@ code {
 .button.red {
     background: #e75448;
 }
-
+/* Terminal Main Block */
 .terminal-window section.terminal {
     color: white;
     font-family: "Inconsolata", monospace;
@@ -267,6 +257,7 @@ code {
     bottom: 0;
     overflow: auto;
 }
+/* Git Bash Headings */
 .terminal-root,
 .terminal-ming {
     color: #3bb662;
@@ -275,28 +266,13 @@ code {
 .terminal-ming {
     color: blueviolet;
 }
+
+/* Terminal Blinking Cursor */
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-}
-
-.typing-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.typed-text {
-    color: var(--red-orange-color-wheel);
-}
-.typing-container p {
-    font-size: 3rem;
-    padding: 0.5rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    overflow: hidden;
 }
 @keyframes blink {
     0% {
@@ -315,6 +291,23 @@ code {
         background-color: #ccc;
     }
 }
+/* Homepage Content Header */
+.home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-header-accent {
+    color: var(--red-orange-color-wheel);
+}
+.home-header p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
 
 /* Home Content - Mobile */
 .homecontent-mobile {
@@ -322,4 +315,51 @@ code {
 }
 div.homecontent-mobile h1:nth-child(odd) {
     color: #fff;
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Remove Button Default Styles */
+
+button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+/* Custom Buttons */
+.contact-button {
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--red-orange-color-wheel);
+    text-align: center;
+    transition: all 0.2s;
+    transform: scale(1.25);
+}
+.contact-button:hover {
+    background-color: var(--pacific-blue);
 }
