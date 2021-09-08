@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route} from "react-router-dom";
 import HomeContent from "./components/HomeContent";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/Footer";
@@ -10,7 +10,6 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                {/* <DesktopNav /> */}
                 <Nav />
                 <div className="content-window">
                     <Route exact path="/about" component={About} />

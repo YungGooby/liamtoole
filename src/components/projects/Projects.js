@@ -1,8 +1,9 @@
-// import ProjectsBlock from "./ProjectsBlock";
 import ProjectCard from "./ProjectCard";
-import logo from '../../logo.svg'
+import ProjectsMobile from "./ProjectsMobile";
+import logo from "../../logo.svg";
 import svelteImage from "../images/rsz_svelteimage.png";
-import discImage from "../images/rsz_discordimage.jpeg"
+import discImage from "../images/rsz_discordimage.jpeg";
+import { useWindowSize } from "../functions/functions";
 
 function Projects() {
     return (
@@ -10,6 +11,17 @@ function Projects() {
             <h1>Projects being worked on</h1>
             <hr className="solid" />
             <div className="proj-container">
+                <RenderProjects/>
+            </div>
+        </>
+    );
+}
+
+const RenderProjects = () => {
+    const size = useWindowSize();
+    if (size.width > 768) {
+        return (
+            <>
                 <ProjectCard
                     link="/discordscrape"
                     image={discImage}
@@ -31,9 +43,31 @@ function Projects() {
                     cat="Svelte"
                     complete="false"
                 />
-            </div>
-        </>
-    );
-}
-
+            </>
+        );
+    } else {
+        return (
+            <>
+                <ProjectsMobile
+                    link="/discordscrape"
+                    image={discImage}
+                    title="Discord Chat Scraper"
+                    complete="false"
+                />
+                <ProjectsMobile
+                    link="/"
+                    image={logo}
+                    title="Portfolio"
+                    complete="false"
+                />
+                <ProjectsMobile
+                    link="/"
+                    image={svelteImage}
+                    title="Svelte Practice"
+                    complete="false"
+                />
+            </>
+        );
+    }
+};
 export default Projects;
