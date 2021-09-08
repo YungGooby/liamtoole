@@ -9,10 +9,10 @@ const DesktopNav = () => {
             </Link>
             <div className="nagivation-sub">
                 <Link to="/about" className="item">
-                    .about( )
+                    [ about ]
                 </Link>
                 <Link to="/projects" className="item">
-                    .projects( )
+                    [ projects ]
                 </Link>
                 <a
                     href="https://github.com/YungGooby"
@@ -20,7 +20,7 @@ const DesktopNav = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    .github( )
+                    [ github ]
                 </a>
                 <a
                     href="https://github.com/YungGooby"
@@ -28,7 +28,7 @@ const DesktopNav = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    .cv( )
+                    [ cv ]
                 </a>
             </div>
         </div>

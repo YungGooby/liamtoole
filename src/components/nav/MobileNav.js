@@ -11,10 +11,10 @@ const MobileNav = () => {
             </div>
             <div className="navigation-sub">
                 <Link to="/about" className="item">
-                    .about( )
+                    [ about ]
                 </Link>
                 <Link to="/projects" className="item">
-                    .projects( )
+                    [ projects ]
                 </Link>
                 <a
                     href="https://github.com/YungGooby"
@@ -22,7 +22,7 @@ const MobileNav = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    .github( )
+                    [ github ]
                 </a>
                 <a
                     href="https://github.com/YungGooby"
@@ -30,7 +30,7 @@ const MobileNav = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    .cv( )
+                    [ cv ]
                 </a>
             </div>
         </>
