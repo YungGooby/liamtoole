@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Toggle from "../toggle/Toggle";
 import logo from "../images/logo.svg"
 
 const MobileNav = () => {
@@ -32,6 +33,7 @@ const MobileNav = () => {
                 >
                     [ cv ]
                 </a>
+                <Toggle/>
             </div>
         </>
     );

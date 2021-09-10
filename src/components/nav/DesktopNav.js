@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Toggle from "../toggle/Toggle";
 import logo from "../images/logo.svg"
 
 const DesktopNav = () => {
@@ -7,7 +8,7 @@ const DesktopNav = () => {
             <Link to="/">
                 <img src={logo} className="logo" alt="logo" />
             </Link>
-            <div className="nagivation-sub">
+            <div className="navigation-sub">
                 <Link to="/about" className="item">
                     [ about ]
                 </Link>
@@ -30,6 +31,7 @@ const DesktopNav = () => {
                 >
                     [ cv ]
                 </a>
+                <Toggle/>
             </div>
         </div>
     );

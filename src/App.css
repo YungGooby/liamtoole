@@ -5,12 +5,33 @@
 /* CSS Variables */
 :root {
     /* Color Pallette */
-    --eerie-black: #201e1fff;
-    --red-orange-color-wheel: #ff4000ff;
-    --light-salmon: #faaa8dff;
-    --antique-white: #feefddff;
-    --pacific-blue: #50b2c0ff;
+    --main-color: #201e1fff;
+    --main-accent-color: #ff4000ff;
+    --secondary-accent-color: #50b2c0ff;
+    --tertiary-accent-color: #feefddff;
+
+    @media (prefers-color-scheme: light) {
+        --main-color: #202c59;
+        --main-accent-color: #d95d39;
+        --secondary-accent-color: #f18805;
+        --tertiary-accent-color: #f0a202;
+    }
 }
+
+/* Color Pallette */
+.theme-dark {
+    --main-color: #201e1fff;
+    --main-accent-color: #ff4000ff;
+    --secondary-accent-color: #50b2c0ff;
+    --tertiary-accent-color: #feefddff;
+}
+.theme-light {
+    --main-color: #4e5166;
+    --main-accent-color: #b5aa9d;
+    --secondary-accent-color: #7c90a0;
+    --tertiary-accent-color: #b9b7a7;
+}
+
 /* Default Styling Across Site */
 * {
     box-sizing: border-box;
@@ -20,30 +41,29 @@
 html,
 body,
 .app {
-    background-color: var(--eerie-black);
+    background-color: var(--main-color);
     position: relative;
     min-height: 100vh;
     margin: 0;
 }
 h1 {
-    color: var(--red-orange-color-wheel);
+    color: var(--main-accent-color);
 }
 h3 {
-    color: var(--antique-white);
+    color: var(--tertiary-accent-color);
 }
 h5 {
-    color: var(--pacific-blue);
+    color: var(--secondary-accent-color);
 }
 /* Link Styles */
 a {
-    display: inline-block;
     text-decoration: none;
     position: relative;
     color: #fff;
     font-weight: 800;
 }
 a:hover {
-    color: var(--red-orange-color-wheel);
+    color: var(--main-accent-color);
 }
 
 /* Navigation CSS */
@@ -58,7 +78,12 @@ a:hover {
     color: #fff;
     padding: 3% 5%;
 }
-a.item {
+.navigation-sub{
+    display: flex;
+    justify-content: flex-end;
+}
+.item {
+    display: inline-block;
     margin: 0 1.5rem;
     font-size: 2rem;
 }
@@ -101,7 +126,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--antique-white);
+    background-color: var(--tertiary-accent-color);
 }
 
 /* Code Block CSS */
@@ -112,7 +137,7 @@ pre {
     width: min-content;
 }
 code {
-    color: var(--pacific-blue);
+    color: var(--secondary-accent-color);
 }
 
 /* Mobile Navigation*/
@@ -136,7 +161,7 @@ code {
         width: 100%;
     }
     code {
-        color: var(--pacific-blue);
+        color: var(--secondary-accent-color);
         font-size: 0.65rem;
         font-weight: 800;
     }
@@ -233,7 +258,7 @@ code {
     align-items: center;
 }
 .home-header-accent {
-    color: var(--red-orange-color-wheel);
+    color: var(--main-accent-color);
 }
 .home-header p {
     font-size: 3rem;
@@ -290,13 +315,13 @@ button:focus {
     text-decoration: none;
     font-weight: 600;
     color: #ffffff;
-    background-color: var(--red-orange-color-wheel);
+    background-color: var(--main-accent-color);
     text-align: center;
     transition: all 0.2s;
     transform: scale(1.25);
 }
 .contact-button:hover {
-    background-color: var(--pacific-blue);
+    background-color: var(--secondary-accent-color);
 }
 
 /* Project Cards */
@@ -331,15 +356,15 @@ button:focus {
     color: #000;
     font-size: 1.2rem;
     flex-basis: 100%;
-    margin:0;
+    margin: 0;
 }
 .pro-container-text > p {
     color: #000;
     font-size: 0.8rem;
-    margin:0;
+    margin: 0;
 }
 .pro-container-text > p b {
-    color: var(--pacific-blue);
+    color: var(--secondary-accent-color);
     font-style: italic;
 }
 
@@ -364,5 +389,17 @@ button:focus {
 }
 /* Mobile Project Cards */
 @media only screen and (max-width: 768px) {
-    
+}
+
+
+.theme-icon{
+    height: 38px;
+    width: auto;
+}
+.theme-icon > img.dark{
+    height: 100%;
+}
+.theme-icon > img.light{
+    height: 100%;
+    filter: invert(100%);
 }

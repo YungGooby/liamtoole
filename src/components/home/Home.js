@@ -1,4 +1,4 @@
-import { useWindowSize } from "../functions/functions";
+import { useWindowSize} from "../functions/functions"
 import HomeMobileContent from "./HomeMobileContent";
 import HomeTerminal from "./HomeTerminal"
 
