@@ -2,22 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 
-/* CSS Variables */
-:root {
-    /* Color Pallette */
-    --main-color: #201e1fff;
-    --main-accent-color: #ff4000ff;
-    --secondary-accent-color: #50b2c0ff;
-    --tertiary-accent-color: #feefddff;
-
-    @media (prefers-color-scheme: light) {
-        --main-color: #202c59;
-        --main-accent-color: #d95d39;
-        --secondary-accent-color: #f18805;
-        --tertiary-accent-color: #f0a202;
-    }
-}
-
 /* Color Pallette */
 .theme-dark {
     --main-color: #201e1fff;
