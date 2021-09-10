@@ -26,23 +26,6 @@ function Toggle() {
 
     return (
         <div className='item theme-icon'>
-            {/* <label htmlFor='toggle' className='switch'>
-                {togClass === "light" ? (
-                    <input
-                        type='checkbox'
-                        id='toggle'
-                        onClick={handleOnClick}
-                        checked
-                    />
-                ) : (
-                    <input
-                        type='checkbox'
-                        id='toggle'
-                        onClick={handleOnClick}
-                    />
-                )}
-                <span className='slider round'></span>
-            </label> */}
             {togClass === "light" ? (
                 <img
                     src={brightness}
