@@ -3,17 +3,13 @@ import { Link } from "react-router-dom";
 function ProjectsMobile(props) {
     return (
         <>
-            <div>
-                <div className="proj">
-                    <Link to={props.link}>
-                        <div className="proj-image">
-                            <img src={props.image} alt="" />
-                        </div>
-                    </Link>
-                    
+            <Link to={props.link}>
+            <div class={`pro-container ${props.styleName}`}>
+                <div class='pro-container-text'>
+                    <h2>{props.title}</h2>
                 </div>
-                <div className="proj-title">{props.title}</div>
             </div>
+            </Link>
         </>
     );
 }

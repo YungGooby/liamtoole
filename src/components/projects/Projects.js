@@ -1,8 +1,5 @@
 import ProjectCard from "./ProjectCard";
 import ProjectsMobile from "./ProjectsMobile";
-import logo from "../images/logo.svg"
-import svelteImage from "../images/rsz_svelteimage.png";
-import discImage from "../images/rsz_discordimage.jpeg";
 import { useWindowSize } from "../functions/functions";
 
 function Projects() {
@@ -10,7 +7,7 @@ function Projects() {
         <>
             <h1>Projects being worked on</h1>
             <hr className="solid" />
-            <div className="proj-container">
+            <div className="projects-container">
                 <RenderProjects/>
             </div>
         </>
@@ -23,23 +20,23 @@ const RenderProjects = () => {
         return (
             <>
                 <ProjectCard
-                    link="/discordscrape"
-                    image={discImage}
+                    link="/"
                     title="Discord Chat Scraper"
+                    styleName = "disc-chat-scrape"
                     cat="Python, Discord"
                     complete="false"
                 />
                 <ProjectCard
                     link="/"
-                    image={logo}
                     title="Portfolio"
+                    styleName = "portfolio"
                     cat="Website, React, HTML, CSS"
                     complete="false"
                 />
                 <ProjectCard
                     link="/"
-                    image={svelteImage}
                     title="Svelte Practice"
+                    styleName = "svelte-practice"
                     cat="Svelte"
                     complete="false"
                 />
@@ -49,21 +46,21 @@ const RenderProjects = () => {
         return (
             <>
                 <ProjectsMobile
-                    link="/discordscrape"
-                    image={discImage}
+                    link="/"
                     title="Discord Chat Scraper"
+                    styleName = "disc-chat-scrape"
                     complete="false"
                 />
                 <ProjectsMobile
                     link="/"
-                    image={logo}
                     title="Portfolio"
+                    styleName = "portfolio"
                     complete="false"
                 />
                 <ProjectsMobile
                     link="/"
-                    image={svelteImage}
                     title="Svelte Practice"
+                    styleName = "svelte-practice"
                     complete="false"
                 />
             </>

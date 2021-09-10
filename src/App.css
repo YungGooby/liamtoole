@@ -56,7 +56,7 @@ a:hover {
     height: 10vh;
     background-color: var(--midnight-green-eagle-green-3);
     color: #fff;
-    padding: 0 5%;
+    padding: 5%;
 }
 a.item {
     margin: 0 1.5rem;
@@ -115,49 +115,7 @@ code {
     color: var(--pacific-blue);
 }
 
-/* Project Blocks */
-.proj {
-    height: 35%;
-    width: auto;
-    overflow: hidden;
-    display: inline-block;
-    margin: 3%;
-    padding: 2%;
-    border: 3px solid var(--antique-white);
-    border-radius: 10%;
-}
-.proj:hover {
-    border: 3px solid var(--red-orange-color-wheel);
-    border-radius: 10%;
-}
-.proj-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: auto;
-}
-.proj-image > img {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 10%;
-}
-.proj-title,
-.proj-cat {
-    margin-top: 0.5rem;
-    text-align: center;
-}
-.proj-cat {
-    color: var(--pacific-blue);
-}
-.proj-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* Mobile */
+/* Mobile Navigation*/
 @media only screen and (max-width: 768px) {
     .navigation {
         margin-top: 5%;
@@ -181,29 +139,6 @@ code {
         color: var(--pacific-blue);
         font-size: 0.65rem;
         font-weight: 800;
-    }
-    .proj {
-        height: 188px;
-        width: 200px;
-        padding: 0%;
-    }
-    .proj-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 188px;
-        width: 200px;
-    }
-    .proj-image > img {
-        height: 188px;
-        width: 200px;
-        border-radius: 10%;
-    }
-    .proj-title {
-        margin-top: 0rem;
-        margin-bottom: 1rem;
-        text-align: center;
-        font-size: 1.5rem;
     }
 }
 
@@ -362,4 +297,72 @@ button:focus {
 }
 .contact-button:hover {
     background-color: var(--pacific-blue);
+}
+
+/* Project Cards */
+/* Projects Component Container */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Project Card Container */
+.pro-container {
+    display: flex;
+    align-items: flex-end;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
+    margin: 3rem;
+    border: 0.2rem solid #fff;
+}
+.pro-container-text {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    bottom: 0;
+}
+.pro-container-text > h2 {
+    color: #000;
+    font-size: 1.2rem;
+    flex-basis: 100%;
+    margin:0;
+}
+.pro-container-text > p {
+    color: #000;
+    font-size: 0.8rem;
+    margin:0;
+}
+.pro-container-text > p b {
+    color: var(--pacific-blue);
+    font-style: italic;
+}
+
+/* Project Images */
+.pro-container.disc-chat-scrape {
+    background: url("./components/images/rsz_discordimage.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+.pro-container.portfolio {
+    background: url("./components/images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.pro-container.svelte-practice {
+    background: url("./components/images/rsz_svelteimage.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+/* Mobile Project Cards */
+@media only screen and (max-width: 768px) {
+    
 }
