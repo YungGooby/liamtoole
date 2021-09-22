@@ -1,16 +1,21 @@
 import ProjectCard from "./ProjectCard";
 import ProjectsMobile from "./ProjectsMobile";
 import { useWindowSize } from "../functions/functions";
+import { motion } from "framer-motion";
 
 function Projects() {
     return (
-        <>
+        <motion.div
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ ease: "easeIn", duration: 0.5 }}
+        >
             <h1>Projects being worked on</h1>
-            <hr className="solid" />
-            <div className="projects-container">
-                <RenderProjects/>
+            <hr className='solid' />
+            <div className='projects-container'>
+                <RenderProjects />
             </div>
-        </>
+        </motion.div>
     );
 }
 
@@ -20,25 +25,25 @@ const RenderProjects = () => {
         return (
             <>
                 <ProjectCard
-                    link="/"
-                    title="Discord Chat Scraper"
-                    styleName = "disc-chat-scrape"
-                    cat="Python, Discord"
-                    complete="false"
+                    link='/'
+                    title='Discord Chat Scraper'
+                    styleName='disc-chat-scrape'
+                    cat='Python, Discord'
+                    complete='false'
                 />
                 <ProjectCard
-                    link="/"
-                    title="Portfolio"
-                    styleName = "portfolio"
-                    cat="Website, React, HTML, CSS"
-                    complete="false"
+                    link='/'
+                    title='Portfolio'
+                    styleName='portfolio'
+                    cat='Website, React, HTML, CSS'
+                    complete='false'
                 />
                 <ProjectCard
-                    link="/"
-                    title="Svelte Practice"
-                    styleName = "svelte-practice"
-                    cat="Svelte"
-                    complete="false"
+                    link='/'
+                    title='Svelte Practice'
+                    styleName='svelte-practice'
+                    cat='Svelte'
+                    complete='false'
                 />
             </>
         );
@@ -46,22 +51,22 @@ const RenderProjects = () => {
         return (
             <>
                 <ProjectsMobile
-                    link="/"
-                    title="Discord Chat Scraper"
-                    styleName = "disc-chat-scrape"
-                    complete="false"
+                    link='/'
+                    title='Discord Chat Scraper'
+                    styleName='disc-chat-scrape'
+                    complete='false'
                 />
                 <ProjectsMobile
-                    link="/"
-                    title="Portfolio"
-                    styleName = "portfolio"
-                    complete="false"
+                    link='/'
+                    title='Portfolio'
+                    styleName='portfolio'
+                    complete='false'
                 />
                 <ProjectsMobile
-                    link="/"
-                    title="Svelte Practice"
-                    styleName = "svelte-practice"
-                    complete="false"
+                    link='/'
+                    title='Svelte Practice'
+                    styleName='svelte-practice'
+                    complete='false'
                 />
             </>
         );
