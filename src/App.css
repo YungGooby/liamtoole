@@ -29,7 +29,7 @@ body,
     position: relative;
     min-height: 100vh;
     margin: 0;
-    overflow:auto;
+    overflow: auto;
 }
 h1 {
     color: var(--main-accent-color);
@@ -63,14 +63,14 @@ a:hover {
     color: #fff;
     padding: 3% 5%;
 }
-.navigation-sub{
+.navigation-sub {
     display: flex;
     justify-content: flex-end;
 }
 .item {
     display: inline-block;
     margin: 0 1.5rem;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 .logo {
     user-drag: none;
@@ -237,25 +237,6 @@ code {
         background-color: #ccc;
     }
 }
-@media only screen and (max-width: 1023px) {
-    .terminal-window {
-        text-align: left;
-        width: 60vw;
-        height: 360px;
-        border-radius: 10px;
-        margin: auto;
-        position: relative;
-    }
-
-}
-
-
-
-
-
-
-
-
 /* Homepage Content Header */
 .home-header {
     display: flex;
@@ -396,15 +377,14 @@ button:focus {
 @media only screen and (max-width: 768px) {
 }
 
-
-.theme-icon{
+.theme-icon {
     height: 38px;
     width: auto;
 }
-.theme-icon > img.dark{
+.theme-icon > img.dark {
     height: 100%;
 }
-.theme-icon > img.light{
+.theme-icon > img.light {
     height: 100%;
     filter: invert(100%);
 }
