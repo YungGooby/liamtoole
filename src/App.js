@@ -1,5 +1,5 @@
 // Modules
-import { Route } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { keepTheme } from './components/functions/functions';
 import { AnimatePresence } from 'framer-motion';
@@ -15,20 +15,23 @@ import Nav from './components/nav/Nav';
 import './App.css';
 
 function App() {
+	const location = useLocation();
 	useEffect(() => {
 		keepTheme();
 	});
 	return (
 		<div className='app'>
 			<Nav />
-			<AnimatePresence exitBeforeEnter>
-				<div className='content-window'>
-					<Route exact path='/about' component={About} />
-					<Route exact path='/projects' component={Projects} />
-					<Route exact path='/' component={Home} />
-				</div>
-				<Footer />
-			</AnimatePresence>
+			<div className='content-window'>
+				<AnimatePresence exitBeforeEnter>
+					<Switch location={location} key={location.key}>
+						<Route exact path='/about' component={About} />
+						<Route exact path='/projects' component={Projects} />
+						<Route exact path='/' component={Home} />
+					</Switch>
+				</AnimatePresence>
+			</div>
+			<Footer />
 		</div>
 	);
 }

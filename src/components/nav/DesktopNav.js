@@ -12,12 +12,12 @@ const DesktopNav = () => {
 			<div className='navigation-sub'>
 				<motion.span whileTap={{ scale: 0.9 }}>
 					<Link to='/about' className='item'>
-						[ about ]
+						[ ABOUT ]
 					</Link>
 				</motion.span>
 				<motion.span whileTap={{ scale: 0.9 }}>
 					<Link to='/projects' className='item'>
-						[ projects ]
+						[ PROJECTS ]
 					</Link>
 				</motion.span>
 				<motion.span whileTap={{ scale: 0.9 }}>
@@ -27,7 +27,7 @@ const DesktopNav = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						[ github ]
+						[ GITHUB ]
 					</a>
 				</motion.span>
 				<motion.span whileTap={{ scale: 0.9 }}>
@@ -37,7 +37,7 @@ const DesktopNav = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						[ cv ]
+						[ CV ]
 					</a>
 				</motion.span>
 				<motion.span whileTap={{ scale: 0.9 }}>

@@ -5,18 +5,17 @@ import { motion } from 'framer-motion';
 
 const projectVariants = {
 	hidden: {
-		y: '100vh',
+		x: '100vw',
 		overflow: 'hidden',
 	},
 	visible: {
-		y: '0vh',
+		x: '0vw',
 		overflow: 'auto',
-		transition: { ease: 'easeInOut' },
+		transition: { ease: 'easeInOut', duration: 0.5 },
 	},
 	exit: {
-		y: '100vh',
-		overflow: 'hidden',
-		transition: { ease: 'easeInOut' },
+		x: '-100vw',
+		transition: { ease: 'easeInOut', duration: 0.5 },
 	},
 };
 

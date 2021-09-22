@@ -5,18 +5,15 @@ import HomeTerminal from './HomeTerminal';
 
 const homeVariants = {
 	hidden: {
-		y: '100vh',
-		overflow: 'hidden',
+		opacity: 0,
 	},
 	visible: {
-		y: '0vh',
-		overflow: 'auto',
-		transition: { ease: 'easeInOut' },
+		opacity: 1,
+		transition: { ease: 'easeInOut', duration: 0.5 },
 	},
 	exit: {
-		y: '100vh',
-		overflow: 'hidden',
-		transition: { ease: 'easeInOut' },
+		opacity: 0,
+		transition: { ease: 'easeInOut', duration: 0.5 },
 	},
 };
 

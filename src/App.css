@@ -56,20 +56,22 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 10vh;
-	background-color: var(--midnight-green-eagle-green-3);
+	background-color: var(--main-color);
 	color: #fff;
 	padding: 3% 5%;
+	z-index: 1;
 }
 .navigation-sub {
+	position: sticky;
 	display: flex;
 	justify-content: flex-end;
 }
 .item {
 	display: inline-block;
-	margin: 0 1.5rem;
+	margin: 0 1rem;
 	font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 .logo {
@@ -84,18 +86,19 @@ a:hover {
 }
 /* Main Content Window CSS */
 .content-window {
-	padding: 0 5% 2.5rem 5%;
+	padding: 6%;
 	height: 100%;
 }
 /* Footer CSS */
 .footer {
-	position: absolute;
-	bottom: 0;
-	height: 2.5rem;
+	position: fixed;
+	z-index: 1;
+	bottom: 0%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+	background-color: var(--main-color);
 }
 .footer p {
 	font-size: 0.75rem;
@@ -103,7 +106,8 @@ a:hover {
 
 /* Scrollbar CSS */
 body::-webkit-scrollbar {
-	width: 1em;
+	width: 2em;
+	display: none;
 }
 
 body::-webkit-scrollbar-track {
@@ -123,34 +127,6 @@ pre {
 }
 code {
 	color: var(--secondary-accent-color);
-}
-
-/* Mobile Navigation*/
-@media only screen and (max-width: 763px) {
-	.navigation {
-		margin-top: 5%;
-	}
-	.navigation-sub {
-		display: flex;
-		justify-content: flex-start;
-		margin-top: 1rem;
-		margin-left: 2rem;
-	}
-	a.item {
-		font-size: 1.2rem;
-		margin: 0 0.7rem;
-	}
-	pre {
-		background-color: rgb(17, 17, 17);
-		box-shadow: 2px 2px 5px #000;
-		padding: 1%;
-		width: 100%;
-	}
-	code {
-		color: var(--secondary-accent-color);
-		font-size: 0.65rem;
-		font-weight: 800;
-	}
 }
 
 /* Home Content - Terminal Window */
@@ -266,7 +242,7 @@ div.homecontent-mobile h1:nth-child(odd) {
 /* Contact Wrapper */
 .contact-wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 }
 /* Remove Button Default Styles */
@@ -373,10 +349,7 @@ button:focus {
 	background-position: top;
 	background-size: contain;
 }
-/* Mobile Project Cards */
-@media only screen and (max-width: 768px) {
-}
-
+/* Theme Switcher */
 .theme-icon {
 	height: 38px;
 	width: auto;
@@ -387,4 +360,55 @@ button:focus {
 .theme-icon > img.light {
 	height: 100%;
 	filter: invert(100%);
+}
+
+/* Mobile Navigation*/
+@media only screen and (max-width: 763px) {
+	.navigation {
+		position: fixed;
+		padding: 0%;
+		height: 10%;
+	}
+	.navigation-sub {
+		position: fixed;
+		top: 10%;
+		width: 100%;
+		padding: 0 5%;
+		display: flex;
+		justify-content: flex-start;
+		background-color: var(--main-color);
+		z-index: 1;
+	}
+	.logo {
+		transform: scale(0.7);
+	}
+	a.item {
+		font-size: clamp(0.8rem, 2vw, 1.5rem);
+		margin: 0 0.7rem;
+	}
+	pre {
+		background-color: rgb(17, 17, 17);
+		box-shadow: 2px 2px 5px #000;
+		padding: 1%;
+		width: 100%;
+	}
+	code {
+		color: var(--secondary-accent-color);
+		font-size: 0.65rem;
+		font-weight: 800;
+	}
+	.content-window {
+		padding-top: 10%;
+		margin-top: 15%;
+	}
+	.theme-icon {
+		height: 24px;
+		width: auto;
+		display: inline-flex;
+		align-self: center;
+	}
+	.theme-icon > img {
+		bottom: 0.3rem;
+		position: relative;
+	}
 }
