@@ -29,6 +29,7 @@ body,
     position: relative;
     min-height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 h1 {
     color: var(--main-accent-color);

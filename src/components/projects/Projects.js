@@ -3,12 +3,30 @@ import ProjectsMobile from "./ProjectsMobile";
 import { useWindowSize } from "../functions/functions";
 import { motion } from "framer-motion";
 
+const projectVariants = {
+    hidden: {
+        y: "100vh",
+        overflow: "hidden"
+    },
+    visible: {
+        y: "0vh",
+        overflow: "auto",
+        transition: { ease: "easeInOut" },
+    },
+    exit: {
+        y: "100vh",
+        overflow: "hidden",
+        transition: { ease: "easeInOut" },
+    },
+};
+
 function Projects() {
     return (
         <motion.div
-            animate={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
-            transition={{ ease: "easeIn", duration: 0.5 }}
+            variants={projectVariants}
+            initial='hidden'
+            animate='visible'
+            exit='exit'
         >
             <h1>Projects being worked on</h1>
             <hr className='solid' />
