@@ -29,7 +29,7 @@ body,
     position: relative;
     min-height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow:auto;
 }
 h1 {
     color: var(--main-accent-color);
@@ -70,7 +70,7 @@ a:hover {
 .item {
     display: inline-block;
     margin: 0 1.5rem;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2.5vw, 2rem);
 }
 .logo {
     user-drag: none;
@@ -126,14 +126,15 @@ code {
 }
 
 /* Mobile Navigation*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 763px) {
     .navigation {
         margin-top: 5%;
     }
     .navigation-sub {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         margin-top: 1rem;
+        margin-left: 2rem;
     }
     a.item {
         font-size: 1.2rem;
@@ -236,6 +237,25 @@ code {
         background-color: #ccc;
     }
 }
+@media only screen and (max-width: 1023px) {
+    .terminal-window {
+        text-align: left;
+        width: 60vw;
+        height: 360px;
+        border-radius: 10px;
+        margin: auto;
+        position: relative;
+    }
+
+}
+
+
+
+
+
+
+
+
 /* Homepage Content Header */
 .home-header {
     display: flex;
