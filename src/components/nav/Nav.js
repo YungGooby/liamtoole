@@ -7,7 +7,7 @@ const Nav = () => {
 
     return(
         <>
-        {size.width > 768 ? <DesktopNav/>:<MobileNav/>}
+        {size.width > 763 ? <DesktopNav/>:<MobileNav/>}
         </>
     )
 };
