@@ -1,12 +1,13 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ProjectsMobile(props) {
+function ProjectsMobile({ link, title, styleName }) {
 	return (
 		<>
-			<Link to={props.link}>
-				<div class={`pro-container ${props.styleName}`}>
-					<div class='pro-container-text'>
-						<h2>{props.title}</h2>
+			<Link to={link}>
+				<div className={`pro-container ${styleName}`}>
+					<div className='pro-container-text'>
+						<h2>{title}</h2>
 					</div>
 				</div>
 			</Link>

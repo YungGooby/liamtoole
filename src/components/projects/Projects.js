@@ -1,3 +1,4 @@
+import React from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectsMobile from './ProjectsMobile';
 import { useWindowSize } from '../functions/functions';
