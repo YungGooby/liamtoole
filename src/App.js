@@ -1,4 +1,5 @@
 // Modules
+import React from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { keepTheme } from './components/functions/functions';

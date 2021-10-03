@@ -1,3 +1,4 @@
+import React from 'react';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import { useWindowSize } from '../functions/functions';
