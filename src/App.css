@@ -4,8 +4,8 @@
 
 /* Color Pallette */
 .theme-dark {
-	--main-color: #201e1fff;
-	--main-accent-color: #ff4000ff;
+	--main-color: #201e1f;
+	--main-accent-color: #ff4000;
 	--secondary-accent-color: #50b2c0ff;
 	--tertiary-accent-color: #feefddff;
 }
@@ -20,7 +20,6 @@
 * {
 	box-sizing: border-box;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: clamp(1rem, 1.5vw, 1.2rem);
 	color: #fff;
 }
 html,
@@ -349,6 +348,15 @@ button:focus {
 	background-position: top;
 	background-size: contain;
 }
+
+.pro-container.notes-app {
+	background: url('./components/images/rsz_notesapp.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+}
+
+
 /* Theme Switcher */
 .theme-icon {
 	height: 38px;

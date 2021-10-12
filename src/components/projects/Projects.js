@@ -39,53 +39,63 @@ function Projects() {
 
 const RenderProjects = () => {
 	const size = useWindowSize();
+
 	if (size.width > 768) {
 		return (
 			<>
 				<ProjectCard
-					link='/'
 					title='Discord Chat Scraper'
 					styleName='disc-chat-scrape'
 					cat='Python, Discord'
 					complete='false'
 				/>
 				<ProjectCard
-					link='/'
 					title='Portfolio'
 					styleName='portfolio'
 					cat='Website, React, HTML, CSS'
 					complete='false'
 				/>
 				<ProjectCard
-					link='/'
 					title='Svelte Practice'
 					styleName='svelte-practice'
 					cat='Svelte'
 					complete='false'
 				/>
+				<a href='https://lt-notesapp.netlify.app/' target='_blank'>
+					<ProjectCard
+						title='Notes App'
+						styleName='notes-app'
+						cat='React, NodeJS, MongoDB'
+						complete='true'
+					/>
+				</a>
 			</>
 		);
 	} else {
 		return (
 			<>
 				<ProjectsMobile
-					link='/'
 					title='Discord Chat Scraper'
 					styleName='disc-chat-scrape'
 					complete='false'
 				/>
 				<ProjectsMobile
-					link='/'
 					title='Portfolio'
 					styleName='portfolio'
 					complete='false'
 				/>
 				<ProjectsMobile
-					link='/'
 					title='Svelte Practice'
 					styleName='svelte-practice'
 					complete='false'
 				/>
+				<a href='https://lt-notesapp.netlify.app/' target='_blank'>
+					<ProjectsMobile
+						title='Notes App'
+						styleName='notes-app'
+						complete='true'
+					/>
+				</a>
 			</>
 		);
 	}
