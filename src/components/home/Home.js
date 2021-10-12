@@ -1,3 +1,4 @@
+import React from 'react';
 import { useWindowSize } from '../functions/functions';
 import { motion } from 'framer-motion';
 import HomeMobileContent from './HomeMobileContent';

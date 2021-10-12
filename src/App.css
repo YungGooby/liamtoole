@@ -4,8 +4,8 @@
 
 /* Color Pallette */
 .theme-dark {
-	--main-color: #201e1fff;
-	--main-accent-color: #ff4000ff;
+	--main-color: #201e1f;
+	--main-accent-color: #ff4000;
 	--secondary-accent-color: #50b2c0ff;
 	--tertiary-accent-color: #feefddff;
 }
@@ -75,7 +75,6 @@ a:hover {
 	font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 .logo {
-	user-drag: none;
 	-webkit-user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
@@ -349,6 +348,15 @@ button:focus {
 	background-position: top;
 	background-size: contain;
 }
+
+.pro-container.notes-app {
+	background: url('./components/images/rsz_notesapp.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+}
+
+
 /* Theme Switcher */
 .theme-icon {
 	height: 38px;

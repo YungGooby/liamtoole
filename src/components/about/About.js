@@ -1,3 +1,4 @@
+import React from 'react';
 import AboutBlock from './AboutBlock';
 import { motion } from 'framer-motion';
 
