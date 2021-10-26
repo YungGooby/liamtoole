@@ -23,7 +23,7 @@ const DesktopNav = () => {
 				</motion.span>
 				<motion.span whileTap={{ scale: 0.9 }}>
 					<a
-						href='https://github.com/YungGooby'
+						href='https://github.com/liamtoole'
 						className='item'
 						target='_blank'
 						rel='noreferrer'
@@ -33,7 +33,7 @@ const DesktopNav = () => {
 				</motion.span>
 				<motion.span whileTap={{ scale: 0.9 }}>
 					<a
-						href='https://github.com/YungGooby'
+						href='https://github.com/liamtoole'
 						className='item'
 						target='_blank'
 						rel='noreferrer'
