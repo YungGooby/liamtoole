@@ -19,7 +19,7 @@ const MobileNav = () => {
 					[ projects ]
 				</Link>
 				<a
-					href='https://github.com/YungGooby'
+					href='https://github.com/liamtoole'
 					className='item'
 					target='_blank'
 					rel='noreferrer'
@@ -27,7 +27,7 @@ const MobileNav = () => {
 					[ github ]
 				</a>
 				<a
-					href='https://github.com/YungGooby'
+					href='https://github.com/liamtoole'
 					className='item'
 					target='_blank'
 					rel='noreferrer'
